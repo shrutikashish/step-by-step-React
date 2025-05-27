@@ -1,36 +1,33 @@
 
+import Apps from './exp_imp'
 import Header from './header'
-
+import { Login, Profile, User, UserKey } from './UserComponent'
+import { Comp,Compos } from './component'
 
 
 function App() {
-  alert(sum())
+alert(sum())
   return (
     <div>
      <h1> First Component</h1>
      <Comp></Comp>
-     <Compos/>
+     <Compos></Compos>
+     <Apps></Apps>
+     <Login></Login>
+     <Profile></Profile>
+     <User></User>
+     <h1>{UserKey}</h1>
+
      
     </div>
-  )
-}
 
-function Comp(){
-  return (
-    <>
-    <h2> Second Component</h2>
-    </>
-  )
-}
-function Compos(){
-  return (
-    <>
-    <h3> Third Component </h3>
-    </>
-  )
-}
+)
 function sum(){
   return 10+60
+
 }
+}
+
+
 
 export default App
