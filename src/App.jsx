@@ -1,31 +1,12 @@
+import Todo from "./Todos"
 
-import Apps from './exp_imp'
-import Header from './header'
-import { Login, Profile, User, UserKey } from './UserComponent'
-import { Comp,Compos } from './component'
-
-
-function App() {
-alert(sum())
-  return (
+function App(){
+  return(
     <div>
-     <h1> First Component</h1>
-     <Comp></Comp>
-     <Compos></Compos>
-     <Apps></Apps>
-     <Login></Login>
-     <Profile></Profile>
-     <User></User>
-     <h1>{UserKey}</h1>
-
-     
+      <h1>Small Projects of JSX</h1>
+      <Todo></Todo>
     </div>
-
-)
-function sum(){
-  return 10+60
-
-}
+  )
 }
 
 
